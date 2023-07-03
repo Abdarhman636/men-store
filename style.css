@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+     --black-color: #151618;
+     --ligth-color: #E9E9E9;
+}
+
+*, *::after, *::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+     margin: 0;
+     padding: 0;
+     font-family: 'Cairo', sans-serif;
+}
+
+ol, ul {
+     list-style: none;
+     font-family: 'Cairo', sans-serif;
+}
+
+.btn {
+     background-color: var(--black-color);
+     color: var(--ligth-color) ;
+     padding: 7px 20px;
+     font-size: 22px;
+     border: none;
+     cursor: pointer;
+}
+
+.btn-light {
+     background-color: var(--ligth-color) ;
+     color: var(--black-color) ;
+     padding: 5px 18px;
+     font-size: 22px;
+     border: none;
+     cursor: pointer;
+     border: 1px solid var(--black-color);
+     margin-left: 5px;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+body {
+     background-color: var(--ligth-color);
+}
+
+.container {
+     max-width: 80%;
+     margin: auto;
+}
+
+header {
+     display: flex;
+     justify-content: space-between;
+     padding-top: 30px;
+}
+
+nav ul li {
+     display: inline;
+     font-size: 20px;
+     margin: 0 20px;
+}
+
+nav ul li#active {
+     font-weight: bold;
+     text-decoration: underline;
+}
+
+
+/* -----------------------------------Hero--------------------------------- */
+
+
+.hero {
+     display: flex;
+     justify-content: space-between;
+     height: 90vh;
+     align-items: center;
+}
+
+.hero-text h1 {
+     font-size: 90px;
+     font-weight: 300;
+     line-height: 120px;
+}
+
+.hero-text p {
+     margin: 20px 0;
+     font-size: 24px;
+     font-weight: 300;
+}
+
+.hero-img img {
+     width: 100%;
+}
+
+
+/* -----------------------------------Category--------------------------------- */
+
+
+.category {
+     margin: 40px auto;
+     text-align: center;
+}
+
+.category .title h2 {
+     font-size: 60px;
+     font-weight: 300;
+}
+
+.cateroy-imgs {
+     display: flex;
+     justify-content: space-between;
+}
+
+.cateroy-imgs div {
+     margin-top: 20px;
+     height: 400px;
+     display: flex;
+     align-items: end;
+     justify-content: center;
+}
+
+.cateroy-imgs .cat1 {
+     /* background-image: url('assets/cat1.png'); */
+     /* background-image: linear-gradient((color1, color2)), img); */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 0.9)), url('assets/cat1.png');
+     background-size: cover;
+     max-width: 30%;
+     width: 30%;
+}
+
+.cateroy-imgs .cat2 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 0.9)), url('assets/cat2.png');
+     background-size: cover;
+     max-width: 30%;
+     width: 30%;
+}
+
+.cateroy-imgs .cat3 {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 0.9)), url('assets/cat3.png');
+     background-size: cover;
+     max-width: 30%;
+     width: 30%;
+}
+
+.cateroy-imgs h3 {
+     font-size: 30px;
+     color: var(--ligth-color);
+}
+
+
+/* -----------------------------------divider--------------------------------- */
+
+.divider {
+     margin: 150px auto;
+     width: 80%;
+}
+
+.divider img {
+     width: 100%;
+}
+
+
+/* -----------------------------------products--------------------------------- */
+
+.products {
+     margin-bottom: 100px;
+     text-align: center;
+}
+
+.products .title h2 {
+     font-size: 60px;
+     font-weight: 300;
+}
+
+.products-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+}
+
+.products-grid div {
+     height: 400px;
+}
+
+.products-grid div h3 {
+     display: none;
+}
+
+.grid1 {
+     background-image: url('assets/prod1.png');
+     background-size: cover;
+     grid-row-start: 1;
+     grid-row-end: 3;
+     height: 100% !important;
+     background-position: center;
+}
+
+.grid1:hover {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 1)), url('assets/prod1.png');
+}
+
+.grid1:hover h3 {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 100%;
+     color: white;
+     font-size: 50px;
+}
+
+.grid2 {
+     background-image: url('assets/prod2.png');
+     background-size: cover;
+}
+
+.grid2:hover {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 1)), url('assets/prod2.png');
+}
+
+.grid2:hover h3 {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 100%;
+     color: white;
+     font-size: 50px;
+}
+
+
+.grid3 {
+     background-image: url('assets/prod3.png');
+     background-size: cover;
+}
+
+.grid3:hover {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 1)), url('assets/prod3.png');
+}
+
+
+.grid3:hover h3 {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 100%;
+     color: white;
+     font-size: 50px;
+}
+
+.grid4 {
+     background-image: url('assets/prod4.png');
+     background-size: cover;
+}
+
+.grid4:hover {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 1)), url('assets/prod4.png');
+}
+
+.grid4:hover h3 {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 100%;
+     color: white;
+     font-size: 50px;
+}
+
+
+.grid5 {
+     background-image: url('assets/prod5.png');
+     background-size: cover;
+}
+
+.grid5:hover {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0,0, 1)), url('assets/prod5.png');
+}
+
+.grid5:hover h3 {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 100%;
+     color: white;
+     font-size: 50px;
+}
+
+
+
